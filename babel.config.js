@@ -1,5 +1,5 @@
 const prodPlugins = []
-// µ±Ç°»·¾³ÎªÉú²ú»·¾³¾ÍÒÆ³ıconsole
+// å½“å‰ç¯å¢ƒä¸ºç”Ÿäº§ç¯å¢ƒå°±ç§»é™¤console
 if (process.env.NODE_ENV === 'production') {
   prodPlugins.push('transform-remove-console')
 }
@@ -10,7 +10,7 @@ module.exports = {
   ],
   plugins: [
     ...prodPlugins,
-    // ½âÎöÀÁ¼ÓÔØ
+    // è§£ææ‡’åŠ è½½
     '@babel/plugin-syntax-dynamic-import',
     [
       'import',
